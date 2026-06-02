@@ -59,13 +59,23 @@
       color: var(--accent);
     }
 
-    .hero {
-      padding: 95px 8% 75px;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 48px;
-      align-items: center;
-    }
+    .hero-photo {
+
+  width: 100%;
+
+  max-width: 560px;
+
+  height: auto;
+
+  display: block;
+
+  margin: 18px 0 18px;
+
+  object-fit: cover;
+
+  border-radius: 8px;
+
+}
 
     .eyebrow {
       color: var(--accent);
@@ -356,16 +366,14 @@
   </header>
 
   <main>
-    <section class="hero">
+<section class="hero">
 
   <div>
     <div class="eyebrow">
       Career Development · Productivity · Professional Growth
     </div>
 
-  <div class="hero-image">
-    <img src="ebony-headshot.jpg" alt="Ebony Joyce">
-  </div>
+    <img src="ebony-headshot.jpg" alt="Ebony Joyce" class="hero-photo">
 
     <p>
       I create authentic user-generated content for productivity, career development,
@@ -379,9 +387,19 @@
     </div>
   </div>
 
-
+  <aside class="hero-card">
+    <h3>Why brands partner with me</h3>
+    <ul>
+      <li>Nearly 20 years of corporate experience</li>
+      <li>Senior Procurement Specialist in a Fortune 500 environment</li>
+      <li>Career Coach serving experienced professionals</li>
+      <li>MBA in Global Supply Chain Management</li>
+      <li>25,000+ LinkedIn followers</li>
+    </ul>
+  </aside>
 
 </section>
+    
 
     <section class="about" id="about">
       <div class="about-grid">
