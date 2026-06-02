@@ -117,29 +117,61 @@
       color: var(--accent-dark);
     }
 
-    .hero-card {
-      background: var(--card);
-      border-radius: 28px;
-      padding: 34px;
-      box-shadow: 0 20px 60px rgba(75, 55, 41, 0.12);
-      border: 1px solid var(--line);
-    }
+.hero {
+  padding: 70px 8% 90px;
+  display: grid;
+  grid-template-columns: 540px 500px;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
 
-    .hero-card h3 {
-      color: var(--accent-dark);
-      font-size: 24px;
-      margin-bottom: 18px;
-    }
+.hero-photo {
+  width: 100%;
+  height: 680px;
+  object-fit: cover;
+  border-radius: 24px;
 
-    .hero-card ul {
-      list-style: none;
-    }
+  box-shadow:
+    0 30px 60px rgba(75, 55, 41, 0.10),
+    0 10px 25px rgba(75, 55, 41, 0.06);
 
-    .hero-card li {
-      padding: 12px 0;
-      border-bottom: 1px solid var(--soft);
-      color: var(--muted);
-    }
+  transition: transform 0.3s ease;
+}
+
+.hero-photo:hover {
+  transform: translateY(-4px);
+}
+
+.hero-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 42px;
+
+  border: 1px solid var(--line);
+
+  box-shadow:
+    0 30px 60px rgba(75, 55, 41, 0.08),
+    0 10px 25px rgba(75, 55, 41, 0.05);
+}
+
+.hero-card h3 {
+  color: var(--accent-dark);
+  font-size: 36px;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.hero-card ul {
+  list-style: none;
+}
+
+.hero-card li {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--soft);
+  color: var(--muted);
+  font-size: 18px;
+}
 
     section {
       padding: 72px 8%;
@@ -347,7 +379,7 @@
 
   <header>
     <div class="logo">
-    <img src="logo.png" alt="Ebony Joyce Logo" height="60">
+    <img src="logo.png" alt="Ebony Joyce Logo">
 </div>
     <nav>
       <a href="#about">About</a>
