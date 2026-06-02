@@ -30,7 +30,7 @@
     }
 
     header {
-      padding: 28px 8%;
+      padding: 28px 60%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -45,6 +45,24 @@
   height: 95px;
   width: auto;
   display: block;
+} 
+
+    nav {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #66727e;
+  font-size: 22px;
+  font-weight: 700;
+  transition: color 0.25s ease;
+}
+
+nav a:hover {
+  color: var(--accent-dark);
 }
 
 .hero {
@@ -358,9 +376,10 @@
         grid-template-columns: 1fr;
       }
 
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      .hero-image {
+  order: -1;
+  margin-bottom: 20px;
+}
     }
   </style>
 </head>
